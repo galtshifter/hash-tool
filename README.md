@@ -4,7 +4,7 @@ A simple tool which makes http requests and prints the address of the request al
 
 ## How to run
 
-If you have go installed, you can run this tool running this command: 
+If you have go installed, you can run this tool using this command: 
 ```
 go run ./cmd/hash-tool
 ```
