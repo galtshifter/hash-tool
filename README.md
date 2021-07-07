@@ -22,7 +22,7 @@ or
 go build -o ./bin/hash-tool ./cmd/hash-tool
 ```
 
-This tool is making parallel requests for better performance, you can limit their number with `-parallel` flag
+**Note** that this tool is making parallel requests for better performance, you can limit their number with `-parallel` flag
 
 ## Examples of use
 
@@ -31,5 +31,5 @@ This tool is making parallel requests for better performance, you can limit thei
 
 ./bin/hash-tool http://ya.ru
 
-- ./bin/hash-tool -parallel 3 google.com facebook.com yahoo.com yandex.com twitter.com reddit.com/r/funny reddit.com/r/notfunny baroquemusiclibrary.com
+./bin/hash-tool -parallel 3 google.com facebook.com yahoo.com yandex.com twitter.com reddit.com/r/funny reddit.com/r/notfunny baroquemusiclibrary.com
 ```
