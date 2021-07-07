@@ -9,11 +9,11 @@ If you have go installed, you can run this tool using this command:
 go run ./cmd/hash-tool
 ```
 
-You can also run it with next command:
+You can also run it with the next command:
 ```
 ./bin/hash-tool
 ```
-Usually you don't commit bin files, but it's done here for an easier use. Keep in mind that this bin file is compiled for macOS systems, `GOOS=darwin, GOARCH=amd64`. You can compile it yourself with next commands:
+Usually you don't commit bin files, but it's done here for an easier use. Keep in mind though that this bin file is compiled for macOS systems, `GOOS=darwin, GOARCH=amd64`. You can compile it yourself with next commands:
 ```
 make build
 ```
