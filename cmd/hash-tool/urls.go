@@ -10,13 +10,13 @@ import (
 func prepareURLs(args []string) ([]string, error) {
 	res := make([]string, 0, len(args))
 	for _, v := range args {
-		v = strings.TrimLeft(v, "http://")
-		v = strings.TrimLeft(v, "https://")
+		v = strings.TrimPrefix(v, "http://")
+		v = strings.TrimPrefix(v, "https://")
 		v = "http://" + v
 
 		u, err := url.ParseRequestURI(v)
 		if err != nil {
-			return nil, fmt.Errorf("parsing %s: %w", v, err)
+			return nil, fmt.Errorf("parsing %s: %v", v, err)
 		}
 
 		if u.Host == "" {
